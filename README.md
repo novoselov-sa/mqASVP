@@ -25,4 +25,4 @@ Files ```*_test.sage``` contain expensive tests and tests that requires precompu
 3. Run ```sage dlog_cyc_rat.sage``` to compute discrete logarithm for a random ideal.
 4. Run ```sage ideal_asvp.sage n``` to compute a short element of the ideal.
 
-To run experiments described in the paper, execute one of scripts ```experiments/asvp_d{field_degree}*.sh'''.
+To run experiments described in the paper, execute one of the scripts ```experiments/asvp_d{field_degree}*.sh```.
