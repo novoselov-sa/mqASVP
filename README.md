@@ -20,10 +20,9 @@ and on it's adaptation to the imaginary multiquadratic fields from:
 Files ```*_test.sage``` contain expensive tests and tests that requires precomputations.
 
 # How to use
-1. Set the target field in the file ```trees_generation.sage``` (```food``` variable). Alternatively, you can pass d_1 d_2 ... d_n as command line arguments of this script.
-2. Run ```sage trees_generation.sage``` to generate trees.
-3. Run ```sage testrelations.sage``` to compute class group and relation matrices for subfields.
-4. Run ```sage cl_dlog.sage``` to compute discrete logarithm for a random ideal using Algorithm 4 from the paper.
-5. Run ```sage cl_dlog_smooth.sage``` to compute discrete logarithm assuming that target ideal factors over factor base. You can add primes dividing norm of the target ideal to ```PRIMES``` variable in ```trees_generation.sage``` to include them to the factor base. This requires recomputation of trees and relation matrices.
+1. Run ```sage trees_generation.sage d_1 d_2 ... d_n``` to generate a factor base.
+2. Run ```sage testrelations.sage``` to compute class group and relation matrices for subfields.
+3. Run ```sage dlog_cyc_rat.sage``` to compute discrete logarithm for a random ideal.
+4. Run ```sage ideal_asvp.sage n``` to compute a short element of the ideal.
 
-To run experiments described in the paper, exectute the scripts ```experiments/asvp_d{field_degree}*.sh'''.
+To run experiments described in the paper, execute one of scripts ```experiments/asvp_d{field_degree}*.sh'''.
