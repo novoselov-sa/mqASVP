@@ -24,6 +24,6 @@ for ((i=1;i<=loops;i++)); do
     
     # asvp
     fn="experiments/asvp_d${m}_im_gm${gm_add}_no_hard_unramified_quadchars_dlqc_${i}"
-    sage ideal_asvp.sage ${n} -f ${fprecision} -fin ${finc} > ${fn}.log 2>&1
+    sage ideal_asvp.sage ${n} -f ${fprecision} -fi ${finc} > ${fn}.log 2>&1
     zip -9 -r ${fn}.zip ${fn}.log
 done
